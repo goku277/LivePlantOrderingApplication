@@ -75,7 +75,7 @@ public class IndoorAdapter extends RecyclerView.Adapter<IndoorAdapter.ViewHolder
 
     private void doWork(Set<String> set1, String url) {
         detailsList.addAll(set1);
-        System.out.println("From AllSeasonAdapter doWork() is: " + detailsList);
+        
 
         String val1= "";
 
@@ -83,7 +83,7 @@ public class IndoorAdapter extends RecyclerView.Adapter<IndoorAdapter.ViewHolder
             val1+= s+ " ";
         }
 
-        System.out.println("From AllSeasonAdapter val1: " + val1);
+        
 
         String split[]= val1.split("name:");
 
@@ -94,11 +94,11 @@ public class IndoorAdapter extends RecyclerView.Adapter<IndoorAdapter.ViewHolder
         for (String s: split) {
             if (!s.trim().isEmpty()) {
                 s= s.trim();
-                System.out.println("split: " + s);
+               
                 if (s.contains("imageUri:")) {
                     s1= s;
                     String str= s.substring(s.indexOf("imageUri:"), s.indexOf("quantity:")).replace("imageUri:","").trim();
-                    System.out.println("From IndoorAdapter doWork() str: " + str + " url: " + url);
+                    
                     if (str.contains(url.trim())) {
                         details = s1;
                     }
@@ -106,7 +106,7 @@ public class IndoorAdapter extends RecyclerView.Adapter<IndoorAdapter.ViewHolder
             }
         }
 
-        System.out.println("From AllSeasonAdapter details: " + details);
+       
 
         if (details.contains("price:")) {
             detailsLList.add(details.substring(details.indexOf(details.charAt(0)), details.indexOf("price:")).trim());
@@ -127,7 +127,7 @@ public class IndoorAdapter extends RecyclerView.Adapter<IndoorAdapter.ViewHolder
             detailsLList.add(details.substring(details.indexOf("imageUri:")).trim());
         }
 
-        System.out.println("From IndoorList detailsLList is: " + detailsLList);
+        
 
         Intent sendData= new Intent(context, CollapsingToolbar.class);
         sendData.putStringArrayListExtra("details", detailsLList);
