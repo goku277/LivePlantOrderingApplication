@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Components.Category">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView14"
+                android:layout_width="165dp"
+                android:layout_height="130dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/summer_plants_id"
+                        android:layout_width="164dp"
+                        android:layout_height="86dp"
+                        android:src="@drawable/summer_plants"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/summer_plants_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Summer Plants"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toBottomOf="@+id/summer_plants_id"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView19"
+                android:layout_width="165dp"
+                android:layout_height="130dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toTopOf="@+id/cardView14">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/all_seasonal_plants_id"
+                        android:layout_width="165dp"
+                        android:layout_height="86dp"
+                        android:src="@drawable/allseasonalplants"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/all_seasonal_plants_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="All Seasonal Plants"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toBottomOf="@+id/all_seasonal_plants_id"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView20"
+                android:layout_width="165dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="24dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/cardView14"
+                app:layout_constraintTop_toBottomOf="@+id/cardView14">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/recomend_items_img_id"
+                        android:layout_width="165dp"
+                        android:layout_height="88dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/indoor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/recomend_items_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Indoor Items"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toBottomOf="@+id/recomend_items_img_id"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView21"
+                android:layout_width="165dp"
+                android:layout_height="130dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView19"
+                app:layout_constraintStart_toStartOf="@+id/cardView19"
+                app:layout_constraintTop_toTopOf="@+id/cardView20">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/plants_id"
+                        android:layout_width="165dp"
+                        android:layout_height="93dp"
+                        android:src="@drawable/plant_splash"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/plants_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Plants"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toBottomOf="@+id/plants_id"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView23"
+                android:layout_width="165dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="24dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView20"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintStart_toStartOf="@+id/cardView20"
+                app:layout_constraintTop_toBottomOf="@+id/cardView20">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/seeds_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="88dp"
+                        android:src="@drawable/seeds"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Seeds"
+                        android:id="@+id/seeds_text_id"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toBottomOf="@+id/seeds_id" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView22"
+                android:layout_width="165dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="24dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView21"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/cardView21"
+                app:layout_constraintTop_toBottomOf="@+id/cardView21">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/winter_id"
+                        android:layout_width="165dp"
+                        android:layout_height="94dp"
+                        android:src="@drawable/winter_plants"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/winter_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Winter Plants"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toBottomOf="@+id/winter_id" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView26"
+                android:layout_width="165dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="24dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView23"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/cardView23"
+                app:layout_constraintTop_toBottomOf="@+id/cardView22">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/gardening_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/gardening_tools"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gardening_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Gardening Tools"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toBottomOf="@+id/gardening_id" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView27"
+                android:layout_width="165dp"
+                android:layout_height="130dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView22"
+                app:layout_constraintStart_toStartOf="@+id/cardView22"
+                app:layout_constraintTop_toTopOf="@+id/cardView26">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/medicinal_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="83dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/medicinal_plants"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.333"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/medicinal_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Medicinal Plants"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toBottomOf="@+id/medicinal_id" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView29"
+                android:layout_width="165dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="24dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView26"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/cardView26"
+                app:layout_constraintTop_toBottomOf="@+id/cardView26">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/vegetable_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="83dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/vegetable"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/vegetable_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Vegetable"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toBottomOf="@+id/vegetable_id" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="165dp"
+                android:layout_height="130dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView27"
+                app:layout_constraintStart_toStartOf="@+id/cardView27"
+                app:layout_constraintTop_toTopOf="@+id/cardView29">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/fertilizer_id"
+                        android:layout_width="165dp"
+                        android:layout_height="89dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/fertilizer"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fertilizer_text_id"
+                        android:textAlignment="center"
+                        android:layout_marginTop="8dp"
+                        android:text="Seeds And Fertilizer"
+                        app:layout_constraintTop_toBottomOf="@+id/fertilizer_id"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="179dp" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

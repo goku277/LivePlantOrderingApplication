@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "440306206840",
+    "project_id": "myplantapp-10c99",
+    "storage_bucket": "myplantapp-10c99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440306206840:android:db8bb2f8a03c7945c1058d",
+        "android_client_info": {
+          "package_name": "com.goku277.plantorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440306206840-u2sasp5cn8bi45lv200lhnlkas348afe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi0HUEu9iQ3OczQHtXKE5SBIWwJkJNJJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440306206840-u2sasp5cn8bi45lv200lhnlkas348afe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440306206840:android:7870b30f04aa8e3bc1058d",
+        "android_client_info": {
+          "package_name": "com.simi.plantorderingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440306206840-thplnqnv35tq2jgdu3f454qsn5lpishk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.simi.plantorderingapp",
+            "certificate_hash": "a96b51b131b1063cba67867ff7931d19e48f8260"
+          }
+        },
+        {
+          "client_id": "440306206840-u2sasp5cn8bi45lv200lhnlkas348afe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi0HUEu9iQ3OczQHtXKE5SBIWwJkJNJJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440306206840-u2sasp5cn8bi45lv200lhnlkas348afe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

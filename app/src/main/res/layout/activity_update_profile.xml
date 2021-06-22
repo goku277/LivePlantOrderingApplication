@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".Profile.UpdateProfile">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/name_id"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:hint="Name"
+                android:padding="7dp"
+                android:background="@drawable/rounded_edittexts"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:id="@+id/email_id"
+                android:layout_marginTop="12dp"
+                android:padding="7dp"
+                android:background="@drawable/rounded_edittexts"
+                android:hint="Email"
+                app:layout_constraintTop_toBottomOf="@+id/name_id"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/password_id"
+                android:padding="7dp"
+                android:background="@drawable/rounded_edittexts"
+                android:hint="Password"
+                app:layout_constraintTop_toBottomOf="@+id/email_id"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:id="@+id/phone_id"
+                android:padding="7dp"
+                android:background="@drawable/rounded_edittexts"
+                android:hint="Phone"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/password_id"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:id="@+id/address_id"
+                android:padding="7dp"
+                android:background="@drawable/rounded_edittexts"
+                android:layout_marginTop="12dp"
+                android:hint="Address"
+                app:layout_constraintTop_toBottomOf="@+id/phone_id"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:id="@+id/pin_id"
+                android:padding="7dp"
+                android:background="@drawable/rounded_edittexts"
+                android:hint="Pin"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/address_id" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:id="@+id/city_id"
+                android:padding="7dp"
+                android:background="@drawable/rounded_edittexts"
+                android:layout_marginTop="12dp"
+                android:hint="City"
+                app:layout_constraintTop_toBottomOf="@+id/pin_id"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:padding="7dp"
+                android:background="@drawable/rounded_edittexts"
+                android:id="@+id/location_id"
+                android:layout_marginTop="12dp"
+                android:hint="Location"
+                app:layout_constraintTop_toBottomOf="@+id/city_id"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="36dp"
+                android:id="@+id/update_btn_id"
+                android:text="Update"
+                app:layout_constraintTop_toBottomOf="@+id/location_id"
+                android:textColor="#ffffff"
+                android:background="@drawable/rounded_buttons"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

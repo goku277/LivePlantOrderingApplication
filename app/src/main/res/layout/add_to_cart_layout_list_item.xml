@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/parent_id"
+    android:layout_height="wrap_content"
+    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+    android:padding="1dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+
+            <!--    <ImageView
+                android:id="@+id/img_id"
+                android:layout_width="75dp"
+                android:layout_height="71dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="44dp"
+                android:src="@drawable/profile"
+                app:layout_constraintBottom_toBottomOf="@+id/price_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.659" />   -->
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/img_id"
+                android:layout_width="129dp"
+                android:layout_height="126dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.507" />
+
+            <TextView
+                android:id="@+id/name_id"
+                android:layout_width="236dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="12dp"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toEndOf="@+id/img_id"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/price_id"
+                android:layout_width="233dp"
+                android:layout_height="73dp"
+                app:layout_constraintEnd_toEndOf="@+id/name_id"
+                app:layout_constraintHorizontal_bias="0.928"
+                app:layout_constraintStart_toStartOf="@+id/name_id"
+                app:layout_constraintTop_toBottomOf="@+id/name_id" />
+
+            <TextView
+                android:id="@+id/seeds_qty_id"
+                android:layout_width="234dp"
+                android:layout_height="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/price_id"
+                app:layout_constraintTop_toBottomOf="@+id/price_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
